@@ -1,0 +1,62 @@
+video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    
+}
+@media (min-aspect-ratio: 16/9){
+    video{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9){
+    video{
+        width: auto;
+        height: 100%;
+    }
+}
+#contact  {
+    height: 80vh;
+    background: transparent;
+    color: #ffffff;
+
+}
+
+#contact .container{
+    margin-top: 20%;
+    display: left;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
+
+#contact .container h1{
+    font-size: 3rem;
+    font-weight: bolder;
+    padding-bottom: .1rem;
+}
+
+#contact .container p{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+#contact .container .sociallinks > div a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin: 1rem 2rem;
+    font-weight: bolder;
+    transition: transform .5s ease-in-out;
+}
+
+#contact .container .sociallinks>div a:hover{
+    transform: translateY(-5px);
+}
+

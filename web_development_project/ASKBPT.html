@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP/MySQL | Experiments</title>
+    <link rel="stylesheet" href="ASKBPT.css">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+</head>
+<body>
+
+    <nav>
+        <div class="menu">
+            <div class="logo">
+                <a href="#home"><img width="130px" height="auto" src=""></a>
+            </div>
+        </div>
+      </nav>
+    <img src="imgai.jpg" alt="backgroundimg" width="100%" height="100%"> 
+    <div class="chat-container">
+        <center><p>ASKBPT</p></center><br>
+        <center><input type="text" id="user-input" placeholder="Type your message..."></center><br>
+        <div class="chat-box" id="chat-box"></div>
+        
+        <center><button id="send" onclick="sendMessage()">Send</button></center>
+        <script>
+            var input = document.getElementById("user-input");
+            input.addEventListener("keypress", function(event) {
+              if (event.key === "Enter") {
+                event.preventDefault();
+                document.getElementById("send").click();
+              }
+            });
+            </script>
+    </div>
+    <script src="ASKBPT.js"></script>
+</body>
+</html>
